@@ -1,0 +1,13 @@
+pipeline {     
+    agent any      
+       stages { 
+         stage('brainpredpod'){   
+           steps {                   
+           sh 'sudo kubectl create deployment brainpred  --image=centos:latest   --kubeconfig /root/.kube/config'
+           sh 'sudo kubectl expose deployment brainpred --type=NodePort  --port=4444   --kubeconfig /root/.kube/config'                          
+           sh 'sudo kubectl get pod -o wide   --kubeconfig /root/.kube/config'  
+           sh 'sudo kubectl get svc    --kubeconfig /root/.kube/config'   
+    }       
+ }     
+ }
+}
