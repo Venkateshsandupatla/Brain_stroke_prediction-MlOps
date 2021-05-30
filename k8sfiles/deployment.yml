@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: brainpred-mlops
-        image: venkateshsandupatla/Brain-strokepred-mlops
+        image: venkateshsandupatla/brain-strokepred-mlops
         ports:
         - containerPort: 5000
 ---
