@@ -39,20 +39,20 @@ def output():
             x8=0
         x9=request.args.get('a8')
         if x9=='Private Employee':
-            x9=0
+            x9=4
         elif x9=='Self-employed':
-            x9=1
+            x9=3
         elif x9=='Govt-Employee':
             x9=2
         elif x9=='Children':
-            x9=3
+            x9=0
         else:
-            x9=4
+            x9=1
         x10=request.args.get('a10')
         if x10=='formerly-smoked':
-            x10=0
-        elif x10=='Never-smoked':
             x10=1
+        elif x10=='Never-smoked':
+            x10=0
         elif x10=='Smokes':
             x10=2
         else:
