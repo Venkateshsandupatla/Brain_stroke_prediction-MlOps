@@ -11,7 +11,7 @@ pipeline {
             steps{
                 script{
                   withDockerRegistry([credentialsId: "Docker", url: "https://index.docker.io/v1/"]) {
-                  image = docker.build("venkateshsandupatla/brain-strokepred-mlops", "Docker")
+                  image = docker.build("venkateshsandupatla/brain-stroke-pred-mlops", "Docker")
                   image.push()    
                   }  
                 }
