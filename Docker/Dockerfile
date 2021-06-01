@@ -10,7 +10,7 @@ RUN yum install python3  python3-devel   gcc-c++ -y && \
     pip3 install joblib && \
     pip3 install sklearn && \
     mkdir  /bs_pred
-COPY  BrainStroke_prediction_lr.h5  /bs_pred
+COPY  BrainStroke_prediction_mlops_rf.h5  /bs_pred
 COPY  app.py  /bs_pred
 RUN  mkdir /bs_pred/templates
 COPY  home.html  /bs_pred/templates
