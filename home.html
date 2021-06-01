@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+                      <title>   Brain Stroke Predictor </title>
+    </head>
+    <style>
+        div {
+
+        }
+            
+                input[type=text], select {
+                 width: 40%;
+                 padding: 12px 20px;
+                 margin: 8px 0;
+                 background-color: ghostwhite;
+                 display: inline-block;
+                 border: 1px solid brown ;
+                 border-radius: 10px;
+                 box-sizing: border-box;
+
+
+           }
+          
+            input[type=submit] {
+                width: 15%; 
+                background-color:orangered;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+}
+        
+    </style>
+    <body style="background-image: url(https://media.istockphoto.com/videos/neuronal-activity-3d-animation-of-blue-conceptual-human-brain-video-id1053230810?s=640x640);">
+     <center>
+        <h1 style="color:red;"><center>Brain Disease Predictor</center></h1>
+        <form action="/output" method="GET">
+        <input name="a1" type="text" placeholder="Enter Age" size="44"/> 
+        
+      
+        <br/>
+        <br/>
+        <label for="exampleFormControlInput1" class="form-label"> </label>
+        <select class="form-select" id="Hypertension" name="a2" aria-label="Default select example">
+        <option selected>Hypertension</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>  
+        </select>
+        
+        <br/>
+        <br/>
+        <label for="exampleFormControlInput1" class="form-label"> </label>
+        <select class="form-select" id="Heartdisease" name="a3" aria-label="Default select example">
+        <option selected>Heartdisease</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>  
+        </select>
+       <br/>
+       <br/>
+       <input name="a4" type="text" placeholder="Enter Average Glucose level" size="44"/> 
+       <br/>
+       <br/>
+       <input name="a5" type="text" placeholder="Enter BMI" size="44"/> 
+       <br/>
+       <br/>
+       <label for="exampleFormControlInput1" class="form-label"></label>
+        <select class="form-select" id="gender" name="a6" aria-label="Default select example">
+        <option selected> gender </option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>  
+        </select>
+       <br/>
+       <br/>
+       <label for="exampleFormControlInput1" class="form-label"> </label>
+        <select class="form-select" id="Marraige" name="a7" aria-label="Default select example">
+        <option selected>MaritalStatus</option>
+        <option value="Married">Married</option>
+        <option value="UnMarried">UnMarried</option>  
+        </select>
+       <br/>
+       <br/>
+       <label for="exampleFormControlInput1" class="form-label"> </label>
+        <select class="form-select" id="Residence-Type" name="a8" aria-label="Default select example">
+        <option selected>Residence-Type</option>
+        <option value="Urban">Urban</option>
+        <option value="Rural">Rural</option>  
+        </select>
+       <br/>
+       <br/>
+       <label for="exampleFormControlInput1" class="form-label"> </label>
+        <select class="form-select" id="WorkType" name="a9" aria-label="Default select example">
+        <option selected>WorkType</option>
+        <option value="children">children</option>
+        <option value="NeverWorked">NeverWorked</option>
+        <option value="GovtJob">GovtJob</option>
+        <option value="Selfemployee">Selfemployee</option>
+        <option value="Private">Private</option>
+
+        </select>
+      
+       <br/>
+       <br />
+       <label for="exampleFormControlInput1" class="form-label"> </label>
+        <select class="form-select" id="Smoking-Status" name="a10" aria-label="Default select example">
+        <option selected>Smoking-Status</option>
+        <option value="neversmoked">neversmoked</option>
+        <option value="formerlysmoked">formerlysmoked</option>
+        <option value="smokes">smokes</option>
+        <option value="unknown">unknown</option>
+      
+
+        </select>
+
+       <br/>
+       <input  value="Predict" type='submit' />
+
+
+       </form>
+     </center>
+    </body>
+</html>
