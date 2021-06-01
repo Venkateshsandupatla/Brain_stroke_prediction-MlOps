@@ -1,4 +1,4 @@
 
 import joblib
-joblib_file = "BrainStroke_prediction_lr.h5"
-joblib.dump(lgositic_model, joblib_file)
+joblib_file = "BrainStroke_prediction_mlops_rf.h5"
+joblib.dump(Random_model, joblib_file)
