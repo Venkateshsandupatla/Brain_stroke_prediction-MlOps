@@ -3,7 +3,7 @@ import joblib
 from flask import Flask, render_template, request
 from tensorflow.python.keras.models import Model
 app=Flask("Brain Stroke Prediction")
-model=joblib.load('BrainStroke_prediction_lr.h5')
+model=joblib.load('BrainStroke_prediction_mlops_rf.h5')
 @app.route("/home")
 def home():
      return render_template('home.html')
@@ -60,10 +60,10 @@ def output():
         output=model.predict([[int(x1),int(x2),int(x3),float(x4),float(x5),int(x6),int(x7),int(x8),int(x9),int(x10)]]) 
         data="Consult a doctor"
         if output == 1:
-            data="Consult a doctor"
+            data="Your health conditions are not well, you may get Brain-stroke. So please consult a doctor"
             return render_template('output.html',data=data)
         else:
-            data="No doctor needed"
+            data="You are fine!!!!"
             return render_template('output.html',data=data)
         
 
