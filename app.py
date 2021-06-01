@@ -60,7 +60,7 @@ def output():
         output=model.predict([[int(x1),int(x2),int(x3),float(x4),float(x5),int(x6),int(x7),int(x8),int(x9),int(x10)]]) 
         data="Consult a doctor"
         if output == 1:
-            data="Consult a doctor"
+            data="Your health conditions are not well, you may get Brain-stroke. So please consult a doctor"
             return render_template('output.html',data=data)
         else:
             data="you are fine"
