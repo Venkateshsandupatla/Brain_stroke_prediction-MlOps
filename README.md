@@ -4,3 +4,5 @@ This application is built for predicting whether the person might affect by a Br
 Linkedin Post Link:-https://www.linkedin.com/posts/venkatesh-sandupatla_brain-stroke-prediction-app-activity-6806134620963385344-serS
   
 Linkedin Profile:-https://www.linkedin.com/in/venkatesh-sandupatla 
+
+
